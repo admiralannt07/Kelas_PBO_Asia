@@ -17,7 +17,7 @@ public class strukturkontrol2Lat7 {
         Scanner keyboard = new Scanner(System.in);
 
         System.out.println( "Tuliskan pesan di sini, saya akan tampilkan berulang." );
-        System.out.print("Pesan: ");
+        System.out.println("Pesan: ");
         String message = keyboard.nextLine();
 
         //dua baris berikut untuk membuat bilangan random bertipe integer

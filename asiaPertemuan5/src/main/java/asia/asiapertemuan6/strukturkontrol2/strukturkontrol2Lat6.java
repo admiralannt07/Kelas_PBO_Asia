@@ -16,7 +16,7 @@ public class strukturkontrol2Lat6 {
         char choice;
         
         do {
-            System.out.print("Masukkan angka 1-7: ");
+            System.out.println("Masukkan angka 1-7: ");
             int day = scanner.nextInt();
 
             switch (day) {
@@ -46,7 +46,7 @@ public class strukturkontrol2Lat6 {
                     break;
             }
 
-            System.out.print("Mau coba lagi? (y/n): ");
+            System.out.println("Mau coba lagi? (y/n): ");
             choice = scanner.next().charAt(0);
         } while (choice == 'y' || choice == 'Y');
 

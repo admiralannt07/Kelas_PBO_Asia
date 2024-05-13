@@ -21,7 +21,7 @@ public class strukturkontrol2Lat5 {
         boolean repeat = true;
 
         while (repeat) {
-            System.out.print("Enter a number (1-7): ");
+            System.out.println("Enter a number (1-7): ");
             int day = scanner.nextInt();
 
             switch (day) {

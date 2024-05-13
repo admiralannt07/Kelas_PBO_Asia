@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package asia.asiapertemuan6.strukturkontrol2;
-
 import java.util.Scanner;
 
 /**
@@ -16,7 +15,7 @@ public class strukturkontrol2Lat4 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter a number (1 - 7): ");
+        System.out.println("Enter a number (1 - 7): ");
         int day = input.nextInt();
         
         switch (day) {
