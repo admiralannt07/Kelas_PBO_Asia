@@ -10,7 +10,9 @@ import asia.asiapertemuan7.person.Person;
  *
  * @author A-10
  */
-public class latihanKelas {
+// Nama : Ananta Deva
+// NIM : 23201254
+public class systemTokoBuku {
     public static void main(String[] args) {
         Buku buku1 = new Buku();
         Buku buku2 = new Buku();
@@ -24,15 +26,19 @@ public class latihanKelas {
         System.out.println("Judul: " + buku1.judul);
         buku1.author.sebutNama();
         System.out.println("Tahun Penerbitan: " +buku1.tahunterbit);
-        System.out.println("Harga Beli: " + "Rp" + buku1.harga.beli);
-        System.out.println("Harga Jual: " +  "Rp" + buku1.harga.jual);
+        buku1.harga.setJual(100000);
+        System.out.println("Harga Beli: " + "Rp" + buku1.harga.getBeli());
+        System.out.println("Harga Jual: " +  "Rp" + buku1.harga.getJual());
+        buku1.terjual();
         // Buku 2
         System.out.println("================ Buku 2 ================");
         System.out.println("Judul: " + buku2.judul);
         buku2.author.sebutNama();
         System.out.println("Tahun Penerbitan: " + buku2.tahunterbit);
-        System.out.println("Harga Beli: " + "Rp" + buku2.harga.beli);            
-        System.out.println("Harga Jual: " + "Rp" + buku2.harga.jual);
+        buku2.harga.setJual(120000);
+        System.out.println("Harga Beli: " + "Rp" + buku2.harga.getBeli());            
+        System.out.println("Harga Jual: " + "Rp" + buku2.harga.getJual());
+        buku2.terjual();
     }
 }   
 
@@ -41,9 +47,32 @@ class Buku {
     Person author = new Person();
     int tahunterbit = 2024;
     Harga harga = new Harga();
+    
+    
+   public void terjual(){
+       System.out.println("Buku terjual dengan harga: " + "Rp" + harga.getBeli());
+   }
 }
 
 class Harga {
-    double jual = 10000.00;
-    double beli = 9000.00;
+    private double jual = 100000.00;
+    private double beli = 90000.00;
+    
+    public double getBeli(){
+        return beli;
+    }
+    
+    public void setBeli(double beli){
+        this.beli = beli;
+    }
+    
+    public double getJual() {
+        return jual;
+    }
+
+    public void setJual(double jual) {
+        this.jual = jual;
+    }
+    
+    
 }
